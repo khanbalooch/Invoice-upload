@@ -1,0 +1,24 @@
+<!-- <div *ngIf="invoices?.length"> -->
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Invoice Id</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Selling Price</th>
+        <th scope="col">Due Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <th scope="row">{{invoice.invoice_id}}</th>
+        <td>{{invoice.amount}}</td>
+        <td>{{invoice.selling_price}}</td>
+        <td>{{invoice.due_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- </div> -->
+<div *ngIf="!invoices">
+  <h1>No Invoices uploaded yet</h1>
+</div>

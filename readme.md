@@ -30,3 +30,16 @@ The real-life file includes five thousand rows and includes invalid rows.
 
 3. Customer can see invoices uploaded to the system and see their selling price.
 4. Customer can see upload report and understand errors related to CSV file row processing.
+
+# Installation/Local Server Guide
+1. Clone the repo
+# Backend (Node.js, Express, Sequilize ORM, MySQL)
+2. move to backend directory ==> cd backend
+3. install dependencies ==> npm i
+4. in backend/database/db.config.js change USER, Password and DB name as yours in MySQL
+5. rum npm start you can checkout at ==>  http://localhost:3000
+
+# Frontend (Angular 6)
+6. move to directory ==> cd invoice-upload
+7. install dependencies ==> npm i
+8. run ng serve -o
